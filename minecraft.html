@@ -1,26 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
 
 <head>
   <title>block game</title>
 
   <head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <header class="fixed-top ">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4>About</h4>
+                    <p class="text-body-secondary">Add some information about the album below, the author, or any other
+                        background context. Make it a few sentences long so folks can pick up some informative tidbits.
+                        Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4>Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/dillon-millar-493691347/" class="text-white">Follow on
+                                LinkedIn</a></li>
+                        <li><a href="mailto:dillon0703@outlook.com" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+
+                <strong>Dillon Millar</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
 
   <body style="overflow:false;">
-    <canvas id="myCanvas" width="1000" height="1000" style="border: 1px solid black;"></canvas>
-    <canvas id="minimap" width="200" height="200" style="border: 1px solid black;"></canvas>
-    <input type='file' accept='.world' onchange='openFile(event)'><br>
-    <input type='button' value="save" onClick='saveFile(event)'>
-    <input type='button' value="reset" onClick='reset()'>
-    <div><label> water transparency: </label>
-      <input type="checkbox" id="transparentbox" checked="true">
-    </div>
-    <div><label> fog: </label>
-      <input type="checkbox" id="fogbox" checked="true">
-    </div>
-    <div><label> world size on next reset: </label>
-      <input type="number" id="sizebox" max="128" min="16" step="1" value="128">
-    </div>
+    <canvas id="myCanvas" width="1000" height="1000" style="border: 1px solid black;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;"></canvas>
+    <div style = "padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width:670px">
+      <h2>click on the following box above to play! doesnt work on mobile :(</h2>
+      <canvas id="minimap" width="200" height="200" style="border: 1px solid black;"></canvas>
+      <input type='file' accept='.world' onchange='openFile(event)'><br>
+      <input type='button' value="save" onClick='saveFile(event)'>
+      <input type='button' value="reset" onClick='reset()'>
+      <div><label> water transparency: </label>
+        <input type="checkbox" id="transparentbox" checked="true">
+      </div>
+      <div><label> fog: </label>
+        <input type="checkbox" id="fogbox" checked="true">
+      </div>
+      <div><label> world size on next reset: </label>
+        <input type="number" id="sizebox" max="128" min="16" step="1" value="128">
+      </div>
+      <h3> Controls: </h3>
+      <p> Movement: WASD
+      <br> Looking around: Mouse
+      <br> Place: Right Click
+      <br> Delete: Left Click
+      <br> Fly:  E- up, Q- down
+      <br> Stop Flying: R
+      <br> Jump: Spacebar </p>
+  </div>
   </body>
 
   <script>
@@ -855,6 +915,7 @@
 
       big = Math.min(window.innerHeight, window.innerWidth / aspectRatio);
       big -= 25;
+      big = 500;
       yCollisionDetection(delta);
       movement(delta);
       change_resoultion(big, big * aspectRatio);
@@ -918,8 +979,9 @@
     window.onbeforeunload = function () {
       save2()
     }
-    requestAnimationFrame(update_canvas)
+    request();
     setInterval(save2, 30000);
+    
 
   </script>
 
