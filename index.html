@@ -1,6 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="dark">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
-This website is still in development. Sorry.
+
+<header class="fixed-top ">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4>About</h4>
+                    <p class="text-body-secondary">Add some information about the album below, the author, or any other
+                        background context. Make it a few sentences long so folks can pick up some informative tidbits.
+                        Then, link them off to some social networking sites or contact information.</p>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4>Contact</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.linkedin.com/in/dillon-millar-493691347/" class="text-white">Follow on
+                                LinkedIn</a></li>
+                        <li><a href="mailto:dillon0703@outlook.com" class="text-white">Email me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="" class="navbar-brand d-flex align-items-center">
+
+                <strong>Dillon Millar</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class=" container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="supercute.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Hello!</h1>
+            <p class="lead">I am Dillon Millar, a student with a passion for software development. This website is a
+                list of all the projects I felt I learnt a lot from, or are interesting. They vary in language from python to
+                javascript to C#. Some of them are even playable in the browser.</p>
+        </div>
+    </div>
+</div>
+<!-- possible projects to include:
+    greed corp, redcon, hotline miami, minecraft-python edition, wolfenstein shooter, spinny wheel, wordle bot, 
+    -->
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/minecraft.png" width="100%" height="225" style="
+                    object-fit: cover;
+                "></img>
+                    <div class="card-body">
+                        <p class="card-text">I made a 3D renderer in javascript, without using any external libaries or
+                            WebGL. As a result, it does run quite slowly (and doesnt have textures) but it is playable.
+                            I used it to make a simple copy of minecraft, which you can play by clicking the link.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Read more</button>
+                            </div>
+                            <small class="text-body-secondary">playable in the browser</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Thumbnail</text>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">In this python project, I made a multiplayer top down shooter for me and my
+                            friends to play. It used realtime shadows to make the game more realistic and fun. Since the
+                            client python code was just a text file, it was easily editable so I had to put a lot of
+                            effort into learning about and building a robust anticheat.</p>
+                        <!-- <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Thumbnail</text>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">In this fullstack project, you control a fort of artilery weapons and try
+                            to destroy the other players base. It uses typescript for both the frontend and backend.
+                            Since the game is a carbon copy of an existing game, REDCON, it left me to only have to do
+                            the programming rather than any of the graphics work. This project is still ongoing.</p>
+                        <!-- <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Thumbnail</text>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">In this precursor to my full 3D renderer, it was a simple raycasting engine. At first, it was simply mazes you had to walk through but I added enemies that would attack using a efficent group A* Pathfinding system, requiring only one call for the whole group.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div> -->
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                            dy=".3em">Thumbnail</text>
+                    </svg>
+                    <div class="card-body">
+                        <p class="card-text">This python program is a AI for worldle but not in the way you might think. Instead of guessing letters, it dynamically changes the word and it gives the hints that give the player the least information, using probability. This makes it much harder to win, as the AI is always trying to give you the least information</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div> -->
+                            <small class="text-body-secondary"></small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/frog.png" width="100%" height="225"></img>
+                    <div class="card-body">
+                        <p class="card-text">Its a silly game about a frog in space collecting cheese. This was made in unity and it was my first step into 3D models, animations, and a existing game engine, rather than the previous projects which were made from scratch. Its not the most impressive technically. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Read more</button>
+                            </div> 
+                            <small class="text-body-secondary">playable in browser</small>
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>
