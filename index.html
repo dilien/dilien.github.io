@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html >
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,48 +7,35 @@
     <script src="bootstrap.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
-
-<header class="fixed-top ">
-    <div class="collapse text-bg-dark" id="navbarHeader">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4>About</h4>
-                    <p class="text-body-secondary">Add some information about the album below, the author, or any other
-                        background context. Make it a few sentences long so folks can pick up some informative tidbits.
-                        Then, link them off to some social networking sites or contact information.</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4>Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.linkedin.com/in/dillon-millar-493691347/" class="text-white">Follow on
-                                LinkedIn</a></li>
-                        <li><a href="mailto:dillon0703@outlook.com" class="text-white">Email me</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<headers>
+    <div class="navbar navbar-light shadow-sm">
+      <div class="container">
+        <a href="" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"></path>
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"></path>
+              </svg>
+        </a>
+      </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container">
-            <a href="" class="navbar-brand d-flex align-items-center">
+  </header>
 
-                <strong>Dillon Millar</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
+<div class="px-4 py-3 my-5 text-center">
+    <h1 class="display-5 text-body-emphasis fw-light">DILLON MILLAR</h1>
+    <div class="col-lg-6 mx-auto">
+        <br>
+      <p class="lead mb-4">I am a student with a passion for software development. This website is a
+        list of all the projects I felt I learnt a lot from, or are interesting. They vary in language from python to
+        javascript to C#. Some of them are even playable in the browser.</p>
     </div>
-</header>
+  </div>
 
-<div class=" container col-xxl-8 px-4 py-5">
+<!-- <div class=" container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-            <img src="" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                height="500" loading="lazy">
-        </div>
+            <img src="images/me.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                height="700" loading="lazy">
+        </div> 
         <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Hello!</h1>
             <p class="lead">I am Dillon Millar, a student with a passion for software development. This website is a
@@ -56,50 +43,17 @@
                 javascript to C#. Some of them are even playable in the browser.</p>
         </div>
     </div>
-</div>
+</div> -->
 <!-- possible projects to include:
     greed corp, redcon, hotline miami, minecraft-python edition, wolfenstein shooter, spinny wheel, wordle bot, 
     -->
+
+
+    
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="images/minecraft.png" width="100%"></img>
-                    <div class="card-body">
-                        <p class="card-text">I made a 3D renderer in javascript, without using any external libaries or
-                            WebGL. As a result, it does run quite slowly (and doesnt have textures) but it is playable.
-                            I used it to make a simple copy of minecraft, which you can play by clicking the link.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a href="minecraft.html"><button type="button" class="btn btn-sm btn-outline-secondary">Read more</button></a>
-                            </div>
-                            <small class="text-body-secondary">playable in the browser</small>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="images/hotline_miami.png" width="100%"></img>
-                    <div class="card-body">
-                        <p class="card-text">In this python project, I made a multiplayer top down shooter for me and my
-                            friends to play. It used realtime shadows to make the game more realistic and fun. Since the
-                            client python code was just a text file, it was easily editable so I had to put a lot of
-                            effort into learning about and building a robust anticheat.</p>
-                        <!-- <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            </div>
-                            <small class="text-body-secondary"></small>
-                        </div> -->
-                    </div>
-                </div>
-
-            </div>
-
             <div class="col">
                 <div class="card shadow-sm">
                     <img src="images/redcon.png" width="100%"></img>
@@ -119,8 +73,52 @@
 
             </div>
 
+
             <div class="col">
                 <div class="card shadow-sm">
+                    <img src="images/hotline_miami.png" width="100%"></img>
+                    <div class="card-body">
+                        <p class="card-text">In this python project, I made a multiplayer top down shooter for me and my
+                            friends to play. It used realtime shadows to make the game more realistic and fun. Since the
+                            client python code was just a text file, it was easily editable so I had to put a lot of
+                            effort into learning about and building a robust anticheat.</p>
+                        <!-- <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary"></small>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-1">
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="images/minecraft.png" width="100%"></img>
+                    <div class="card-body">
+                        <p class="card-text">I made a 3D renderer in javascript, without using any external libaries or
+                            WebGL. As a result, it does run quite slowly (and doesnt have textures) but it is playable.
+                            I used it to make a simple copy of minecraft, which you can play by clicking the link.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="minecraft.html"><button type="button" class="btn btn-sm btn-outline-secondary">Read more</button></a>
+                            </div>
+                            <small class="text-body-secondary">playable in the browser</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-3">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
                     <img src="images/raycaster.png" width="100%"></img>
                     <div class="card-body">
                         <p class="card-text">In this precursor to my full 3D renderer, it was a simple raycasting engine. At first, it was simply mazes you had to walk through but I added enemies that would attack using a efficent group A* Pathfinding system, requiring only one call for the whole group.</p>
@@ -136,7 +134,7 @@
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
+                <div class="card h-100 shadow-sm">
                     <img src="images/wordle.png" width="100%"></img>
                     <div class="card-body">
                         <p class="card-text">This python program is a AI for worldle but not in the way you might think. Instead of guessing letters, it dynamically changes the word and it gives the hints that give the player the least information, using probability. This makes it much harder to win, as the AI is always trying to give you the least information</p>
@@ -152,7 +150,7 @@
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
+                <div class="card h-100 shadow-sm">
                     <img src="images/frog.png" width="100%"></img>
                     <div class="card-body">
                         <p class="card-text">Its a silly game about a frog in space collecting cheese. This was made in unity and it was my first step into 3D models, animations, and a existing game engine, rather than the previous projects which were made from scratch. Its not the most impressive technically. </p>
@@ -168,6 +166,20 @@
             </div>
         </div>
     </div>
+    </div>
 </div>
+<div class="container">
+    <footer class="py-3 my-40">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="https://www.linkedin.com/in/dillon-millar-493691347/" class="nav-link px-2 text-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" fill="currentColor" width="16" height="16" viewBox="0 0 50 50">
+            <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+        </svg>LinkedIn</a></li>
+        <li class="nav-item"><a href="mailto:dillon0703@outlook.com" class="nav-link px-2 text-body-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"></path>
+          </svg>
+          </svg>Email</a></li>
+      </ul>
+    </footer>
+  </div>
 
 </html>
